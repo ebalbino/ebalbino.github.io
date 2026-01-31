@@ -7,48 +7,20 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Ed Balbino</copyright>
-    <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ebalbino.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Build Systems</title>
-      <link>https://ebalbino.github.io/tags/build-systems/</link>
-      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/tags/build-systems/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Image Processing</title>
-      <link>https://ebalbino.github.io/tags/image-processing/</link>
-      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/tags/image-processing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Imagemagick</title>
-      <link>https://ebalbino.github.io/tags/imagemagick/</link>
-      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/tags/imagemagick/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Make</title>
-      <link>https://ebalbino.github.io/tags/make/</link>
-      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/tags/make/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Programming</title>
-      <link>https://ebalbino.github.io/tags/programming/</link>
-      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/tags/programming/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Advice</title>
       <link>https://ebalbino.github.io/tags/advice/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://ebalbino.github.io/tags/advice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://ebalbino.github.io/tags/programming/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/tags/programming/</guid>
       <description></description>
     </item>
   </channel>
