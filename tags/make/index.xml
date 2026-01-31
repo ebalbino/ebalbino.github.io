@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Make on Defined Behavior</title>
+    <link>http://localhost:1313/tags/make/</link>
+    <description>Recent content in Make on Defined Behavior</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Ed Balbino</copyright>
+    <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Applying the Unix Philosophy</title>
+      <link>http://localhost:1313/posts/applying-the-unix-philosophy/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/applying-the-unix-philosophy/</guid>
+      <description>&lt;p&gt;I program a game in my free time. One of my first problems is asset management. A game has to load various different sounds, images, models, animations, etc.&lt;/p&gt;&#xA;&lt;p&gt;In the case of images, we will need to possibly handle.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;BMP&lt;/li&gt;&#xA;&lt;li&gt;JPG&lt;/li&gt;&#xA;&lt;li&gt;PNG&lt;/li&gt;&#xA;&lt;li&gt;PSD&lt;/li&gt;&#xA;&lt;li&gt;TIFF&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Each format requires a method for parsing the contents of these files, retrieving information and extracting a bitmap. At maximum, this brings 5 dependencies into my project. Each dependency will require me to implement three functions at minimum. That&amp;rsquo;s 15 functions now. In the future, it can be 30.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

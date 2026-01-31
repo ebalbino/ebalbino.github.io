@@ -1,0 +1,21 @@
+/* fira-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+}
+/* roboto-mono-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Iosevka';
+  font-style: normal;
+  font-weight: 400;
+}
+/* ibm-plex-mono-500italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Iosevka';
+  font-style: italic;
+  font-weight: 500;
+}
