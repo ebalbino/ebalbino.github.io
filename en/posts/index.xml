@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Defined Behavior</title>
+    <link>https://ebalbino.github.io/en/posts/</link>
+    <description>Recent content in Posts on Defined Behavior</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>© Ed Balbino</copyright>
+    <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ebalbino.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Applying the Unix Philosophy</title>
+      <link>https://ebalbino.github.io/en/posts/applying-the-unix-philosophy/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/posts/applying-the-unix-philosophy/</guid>
+      <description>&lt;p&gt;I program a game in my free time. One of my first problems is asset management. A game has to load various different sounds, images, models, animations, etc.&lt;/p&gt;&#xA;&lt;p&gt;In the case of images, we will need to possibly handle.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;BMP&lt;/li&gt;&#xA;&lt;li&gt;JPG&lt;/li&gt;&#xA;&lt;li&gt;PNG&lt;/li&gt;&#xA;&lt;li&gt;PSD&lt;/li&gt;&#xA;&lt;li&gt;TIFF&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Each format requires a method for parsing the contents of these files, retrieving information and extracting a bitmap. At maximum, this brings 5 dependencies into my project. Each dependency will require me to implement three functions at minimum. That&amp;rsquo;s 15 functions now. In the future, it can be 30.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why I enjoy the terminal</title>
+      <link>https://ebalbino.github.io/en/posts/why-i-enjoy-the-terminal/</link>
+      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/posts/why-i-enjoy-the-terminal/</guid>
+      <description>&lt;p&gt;If there&amp;rsquo;s one thing I enjoy about being a software engineer, it&amp;rsquo;s the typing.&lt;/p&gt;&#xA;&lt;p&gt;Everything else frustrates me occasionally. This doesn&amp;rsquo;t mean I don&amp;rsquo;t enjoy those aspects of the job. Debugging errors piques my curiosity. Designing systems with my peers keeps me sharp. Building software &lt;em&gt;is&lt;/em&gt; fun. But I also know how much sleep those shenanigans have cost me.&lt;/p&gt;&#xA;&lt;p&gt;Except for typing. Typing always goes smoothly. It&amp;rsquo;s the silver lining that threads everything together. As long as I&amp;rsquo;m typing, it feels like I&amp;rsquo;m moving toward something.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>When picking up a new programming language</title>
+      <link>https://ebalbino.github.io/en/posts/on-learning-programming/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/posts/on-learning-programming/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Are you a different animal, but the same beast? BRYANT, KOBE&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;A programming language is a means for instructing a computer to perform operations. To distinguish itself from the others, each programming language decides on the fundamentals it will provide to facilitate describing and organizing these operations. There is no objective reason behind what will or will not be provided. Hypothetically, a language could be made that provides all of the methods created to describe operations. In practice though, it never happens. It begs the question. Why is that?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Defined Behavior</title>
-    <link>https://ebalbino.github.io/</link>
+    <link>http://localhost:36455/</link>
     <description>Recent content on Defined Behavior</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>© Ed Balbino</copyright>
     <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ebalbino.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:36455/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>When picking up a new programming language</title>
-      <link>https://ebalbino.github.io/posts/on-learning-programming/</link>
+      <link>http://localhost:36455/posts/on-learning-programming/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/posts/on-learning-programming/</guid>
+      <guid>http://localhost:36455/posts/on-learning-programming/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Are you a different animal, but the same beast? BRYANT, KOBE&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;A programming language is a means for instructing a computer to perform operations. To distinguish itself from the others, each programming language decides on the fundamentals it will provide to facilitate describing and organizing these operations. There is no objective reason behind what will or will not be provided. Hypothetically, a language could be made that provides all of the methods created to describe operations. In practice though, it never happens. It begs the question. Why is that?&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://ebalbino.github.io/about/</link>
+      <link>http://localhost:36455/about/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/about/</guid>
+      <guid>http://localhost:36455/about/</guid>
       <description>&lt;h2 id=&#34;the-author&#34;&gt;The Author&lt;/h2&gt;&#xA;&lt;p&gt;I’m Ed Balbino, a software engineer focused on building and evolving reliable systems. Since 2015, I’ve provided value by building ideas from zero, improving performance-critical services, refactoring legacy code, and mentoring across companies in health, logistics, gaming &amp;amp; gambling and media streaming.&lt;/p&gt;&#xA;&lt;p&gt;Here I share my thoughts about software design, programming, and lessons learned from real production systems and life.&lt;/p&gt;&#xA;&lt;h2 id=&#34;code-review--consulting&#34;&gt;Code Review &amp;amp; Consulting&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Service&lt;/th&gt;&#xA;          &lt;th&gt;Scope&lt;/th&gt;&#xA;          &lt;th&gt;Price&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Quick PR Review&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Up to 500 lines of code&lt;/td&gt;&#xA;          &lt;td&gt;$99&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Deep PR / Feature Review&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Up to 2,000 lines of code&lt;/td&gt;&#xA;          &lt;td&gt;$199&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Module / Service Review&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Up to 2,000 lines of code&lt;/td&gt;&#xA;          &lt;td&gt;$299&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Architecture, Security &amp;amp; Performance Audit&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Multi-service or system-wide&lt;/td&gt;&#xA;          &lt;td&gt;Custom quote&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;All reviews include:&lt;/p&gt;</description>
     </item>
   </channel>

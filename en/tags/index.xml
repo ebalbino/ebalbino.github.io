@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Defined Behavior</title>
+    <link>https://ebalbino.github.io/en/tags/</link>
+    <description>Recent content in Tags on Defined Behavior</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>© Ed Balbino</copyright>
+    <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ebalbino.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build Systems</title>
+      <link>https://ebalbino.github.io/en/tags/build-systems/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/build-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Image Processing</title>
+      <link>https://ebalbino.github.io/en/tags/image-processing/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/image-processing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Imagemagick</title>
+      <link>https://ebalbino.github.io/en/tags/imagemagick/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/imagemagick/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Make</title>
+      <link>https://ebalbino.github.io/en/tags/make/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/make/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://ebalbino.github.io/en/tags/programming/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reflections</title>
+      <link>https://ebalbino.github.io/en/tags/reflections/</link>
+      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/reflections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shell</title>
+      <link>https://ebalbino.github.io/en/tags/shell/</link>
+      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/shell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terminal</title>
+      <link>https://ebalbino.github.io/en/tags/terminal/</link>
+      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/terminal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Advice</title>
+      <link>https://ebalbino.github.io/en/tags/advice/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/advice/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

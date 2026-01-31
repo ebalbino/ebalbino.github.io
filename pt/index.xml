@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Defined Behavior</title>
+    <link>https://ebalbino.github.io/pt/</link>
+    <description>Recent content on Defined Behavior</description>
+    <generator>Hugo</generator>
+    <language>pt-BR</language>
+    <copyright>© Ed Balbino</copyright>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ebalbino.github.io/pt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sobre</title>
+      <link>https://ebalbino.github.io/pt/about/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/pt/about/</guid>
+      <description>&lt;h2 id=&#34;autor&#34;&gt;Autor&lt;/h2&gt;&#xA;&lt;p&gt;Sou Ed Balbino, um engenheiro de software focado em desenvolver e evoluir sistemas de informaçao. Desde 2015, eu tenho proporcionado valor no ramo de saude, logistica, jogos &amp;amp; aposta, e streaming atraves:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Da transformaçao de ideias para sistemas em produçao&lt;/li&gt;&#xA;&lt;li&gt;Da otimizaçao de desempenho nos setores criticos&lt;/li&gt;&#xA;&lt;li&gt;Do refatoramento de codigo legado&lt;/li&gt;&#xA;&lt;li&gt;Da mentoria e ensino&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Aqui eu compartilho meus pensamentos sobre software, programaçao e o que eu aprendo com sistemas em produçao e a vida.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

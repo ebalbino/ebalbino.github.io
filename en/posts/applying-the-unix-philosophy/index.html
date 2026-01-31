@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Applying the Unix Philosophy - Defined Behavior</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="I program a game in my free time. One of my first problems is asset management. A game has to load various different sounds, images, models, animations, etc.
+In the case of images, we will need to possibly handle.
+
+BMP
+JPG
+PNG
+PSD
+TIFF
+
+Each format requires a method for parsing the contents of these files, retrieving information and extracting a bitmap. At maximum, this brings 5 dependencies into my project. Each dependency will require me to implement three functions at minimum. That&rsquo;s 15 functions now. In the future, it can be 30." />
+	<meta property="og:image" content="https://ebalbino.github.io/"/>
+	<meta property="og:url" content="https://ebalbino.github.io/en/posts/applying-the-unix-philosophy/">
+  <meta property="og:site_name" content="Defined Behavior">
+  <meta property="og:title" content="Applying the Unix Philosophy">
+  <meta property="og:description" content="I program a game in my free time. One of my first problems is asset management. A game has to load various different sounds, images, models, animations, etc.
+In the case of images, we will need to possibly handle.
+BMP JPG PNG PSD TIFF Each format requires a method for parsing the contents of these files, retrieving information and extracting a bitmap. At maximum, this brings 5 dependencies into my project. Each dependency will require me to implement three functions at minimum. That’s 15 functions now. In the future, it can be 30.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-31T00:00:00+00:00">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Make">
+    <meta property="article:tag" content="Imagemagick">
+    <meta property="article:tag" content="Build Systems">
+    <meta property="article:tag" content="Image Processing">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Applying the Unix Philosophy">
+  <meta name="twitter:description" content="I program a game in my free time. One of my first problems is asset management. A game has to load various different sounds, images, models, animations, etc.
+In the case of images, we will need to possibly handle.
+BMP JPG PNG PSD TIFF Each format requires a method for parsing the contents of these files, retrieving information and extracting a bitmap. At maximum, this brings 5 dependencies into my project. Each dependency will require me to implement three functions at minimum. That’s 15 functions now. In the future, it can be 30.">
+
+        <link href="https://ebalbino.github.io/css/fonts.12e4c53a83fc26e89e26f25b4e82afa665058e3ffa3a62c7c7eebb308921ceb7.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://ebalbino.github.io/css/main.411dccf228c6d875252abf3706f67d6f666a0529759a2a7586820e17229d0d07.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://ebalbino.github.io/css/dark.f163b79c6de51d14a766ff9f0563053de7f06a4d1bf7b85a59608bf96e566710.css"  disabled /><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://ebalbino.github.io/en/">Defined Behavior</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/en/posts">Blog</a>
+		
+		<a href="/en/about">About</a>
+		
+		<a href="/en/tags">Tags</a>
+		
+		<button id="dark-mode-toggle" class="nav-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" type="button"><svg class="feather" viewBox="0 0 24 24" fill="none" stroke="#232333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg></button>
+		<script src="https://ebalbino.github.io/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Applying the Unix Philosophy</h1>
+          <div class="meta">Posted on Jan 31, 2026</div>
+        </div>
+        
+        <section class="body">
+          <p>I program a game in my free time. One of my first problems is asset management. A game has to load various different sounds, images, models, animations, etc.</p>
+<p>In the case of images, we will need to possibly handle.</p>
+<ul>
+<li>BMP</li>
+<li>JPG</li>
+<li>PNG</li>
+<li>PSD</li>
+<li>TIFF</li>
+</ul>
+<p>Each format requires a method for parsing the contents of these files, retrieving information and extracting a bitmap. At maximum, this brings 5 dependencies into my project. Each dependency will require me to implement three functions at minimum. That&rsquo;s 15 functions now. In the future, it can be 30.</p>
+<p>That&rsquo;s a lot of code just to support image loading. Do I want to take on writing all that code and maintaining it? What if I have to support a new format in the future? That&rsquo;s one more dependency to manage and more code to maintain.</p>
+<p>Most importantly, this application is first and foremost a game. A game shouldn&rsquo;t need to worry about file formats. It only uses the RGB/RGBA values inside those formats.</p>
+<p>With that in mind, I decided against linking libraries to support image loading in the asset management module. In the context of the game, an image is a binary blob of RGB/RGBA values. That will be its representation at runtime and on disk.</p>
+<p>To facilitate this requirement, we&rsquo;ll add a new step to our project&rsquo;s build. All image files will be converted into raw binary blobs.</p>
+<p>We can accomplish this with two programs.</p>
+<h2 id="image-processing-with-imagemagick">Image processing with ImageMagick</h2>
+<p>ImageMagick supports a wide range of image formats. Most importantly, it supports converting images to the <code>.rgb</code> and <code>.rgba</code> formats i.e. raw binary blobs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>imagemagick -depth <span style="color:#8f3f71">8</span> image.png image.rgba
+</span></span><span style="display:flex;"><span>imagemagick -depth <span style="color:#8f3f71">8</span> image.jpg image.rgba
+</span></span><span style="display:flex;"><span>imagemagick -depth <span style="color:#8f3f71">8</span> image.bmp image.rgba
+</span></span><span style="display:flex;"><span>imagemagick -depth <span style="color:#8f3f71">8</span> image.tiff image.rgba
+</span></span><span style="display:flex;"><span>imagemagick -depth <span style="color:#8f3f71">8</span> image.psd image.rgba
+</span></span></code></pre></div><p>We also get more bang for our buck. ImageMagick supports much more than the previously listed formats.</p>
+<h2 id="building-with-make">Building with Make</h2>
+<p>Make allows us to avoid writing a separate command for each image. It defines targets and implicit rules to manage our build.</p>
+<p>Targets are the output of a build. In my scenario, the targets are <code>.rgb</code> and <code>.rgba</code> files. Other file formats will be used to build these targets.</p>
+<p>Through an implicit rule, we can associate a file format to a target.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.png
+</span></span><span style="display:flex;"><span>	@echo $&lt; $@
+</span></span></code></pre></div><p>With this rule in our Makefile, if we run the command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make test.rgba
+</span></span></code></pre></div><p>If the file <code>test.png</code> exists, then the echo command will run and output.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>test.png test.rgba
+</span></span></code></pre></div><p>If a target doesn&rsquo;t have its depedencies, then the output will be:</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make: *** No rule to make target <span style="color:#79740e">&#39;test.rgb&#39;</span>.  Stop.
+</span></span></code></pre></div><p>In our rule&rsquo;s recipe (the part with the echo command), we use two variables: <code>$@</code> and <code>$&lt;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#af3a03">$@</span> <span style="color:#928374;font-style:italic"># The target
+</span></span></span><span style="display:flex;"><span><span style="color:#af3a03">$&lt;</span> <span style="color:#928374;font-style:italic"># Our dependency i.e. the file used to build the target 
+</span></span></span></code></pre></div><p>These variables are expanded respectively to:</p>
+<ul>
+<li><code>test.rgba</code></li>
+<li><code>test.png</code></li>
+</ul>
+<p>With this, we can build an ImageMagick command for converting our files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.png
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span></code></pre></div><p>We can repeat this rule but with different prerequisites in our dependencies.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.jpg
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.tiff
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.psd
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.bmp
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span></code></pre></div><p>Now when <code>make test.rgba</code> is run, it will search for:</p>
+<ul>
+<li><code>test.png</code></li>
+<li><code>test.jpg</code></li>
+<li><code>test.tiff</code></li>
+<li><code>test.psd</code></li>
+<li><code>test.bmp</code></li>
+</ul>
+<p>The first match it finds is used to build <code>test.rgba</code>. If a match isn&rsquo;t found, the same error as before is displayed. If two files of different formats have the same basename, Make can present inconsistent behavior so that&rsquo;s an edge case we need to remember and avoid.</p>
+<p>Earlier I mentioned that Make helps us avoid repeating commands. Now that we&rsquo;ve defined our rules. We just need to define a few variables to accomplish that.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span>JPEGS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.jpg<span style="color:#af3a03">)</span>
+</span></span><span style="display:flex;"><span>PNGS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.png<span style="color:#af3a03">)</span>
+</span></span><span style="display:flex;"><span>TIFFS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.tiff<span style="color:#af3a03">)</span>
+</span></span><span style="display:flex;"><span>PSDS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.psd<span style="color:#af3a03">)</span>
+</span></span><span style="display:flex;"><span>BMPS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.bmp<span style="color:#af3a03">)</span>
+</span></span></code></pre></div><p>The <code>wildcard</code> function expands to all of the files in the directory the Makefile is located in that match the expression.</p>
+<p>With the <code>patsubst</code> function, we can change the extensions of all the matched files to the <code>.rgba</code> target that we want to build.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#af3a03">$(</span>patsubst %.jpg,%.rgba,<span style="color:#af3a03">$(</span>JPEGS<span style="color:#af3a03">))</span>
+</span></span></code></pre></div><p>For example, if we have:</p>
+<ul>
+<li><code>example-1.jpg</code></li>
+<li><code>example-2.jpg</code></li>
+</ul>
+<p><code>patsubst</code> would return a new list with:</p>
+<ul>
+<li><code>example-1.rgba</code></li>
+<li><code>example-2.rgba</code></li>
+</ul>
+<p>This can also be written as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#b57614">$(JPEGS</span><span style="color:#af3a03">:</span>.jpg=.rgba)
+</span></span></code></pre></div><p>You&rsquo;ll probably see the shorthand more often than <code>patsubst</code> in the wild.</p>
+<p>With this we can create a new target <code>build_rgba</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#b57614">build_rgba</span><span style="color:#af3a03">:</span> <span style="color:#af3a03">$(</span>JPEGS:.jpg=.rgba<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>PNGS:.png=.rgba<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>TIFFS:.tiff=.rgba<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>PSD:.psd=.rgba<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>BMPS:.bmp=.rgba<span style="color:#af3a03">)</span>
+</span></span></code></pre></div><p><code>build_rgba</code>&rsquo;s dependencies are expanded when Make is run. The expansion will generate a list of <code>.rgba</code> files from all of the images found in the directory. Each file in that list will match against one of the rules we defined and execute a command.</p>
+<p>With support for both <code>.rgb</code> and <code>.rgba</code> files, this is our final <code>Makefile</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span>JPEGS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.jpg<span style="color:#af3a03">)</span>
+</span></span><span style="display:flex;"><span>PNGS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.png<span style="color:#af3a03">)</span>
+</span></span><span style="display:flex;"><span>TIFFS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.tiff<span style="color:#af3a03">)</span>
+</span></span><span style="display:flex;"><span>PSDS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.psd<span style="color:#af3a03">)</span>
+</span></span><span style="display:flex;"><span>BMPS <span style="color:#af3a03">=</span> <span style="color:#af3a03">$(</span>wildcard *.bmp<span style="color:#af3a03">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgb</span><span style="color:#af3a03">:</span> %.png
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgb</span><span style="color:#af3a03">:</span> %.jpg
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgb</span><span style="color:#af3a03">:</span> %.tiff
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgb</span><span style="color:#af3a03">:</span> %.psd
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgb</span><span style="color:#af3a03">:</span> %.bmp
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.png
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.jpg
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.tiff
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.psd
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">%.rgba</span><span style="color:#af3a03">:</span> %.bmp
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Building&#34;</span> $@
+</span></span><span style="display:flex;"><span>	@magick -depth <span style="color:#8f3f71">8</span> $&lt; $@
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">build_rgb</span><span style="color:#af3a03">:</span> <span style="color:#af3a03">$(</span>JPEGS:.jpg=.rgb<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>PNGS:.png=.rgb<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>TIFFS:.tiff=.rgb<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>PSD:.psd=.rgb<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>BMPS:.bmp=.rgb<span style="color:#af3a03">)</span> 
+</span></span><span style="display:flex;"><span><span style="color:#b57614">build_rgba</span><span style="color:#af3a03">:</span> <span style="color:#af3a03">$(</span>JPEGS:.jpg=.rgba<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>PNGS:.png=.rgba<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>TIFFS:.tiff=.rgba<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>PSD:.psd=.rgba<span style="color:#af3a03">)</span> <span style="color:#af3a03">$(</span>BMPS:.bmp=.rgba<span style="color:#af3a03">)</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">.PHONY</span><span style="color:#af3a03">:</span> build
+</span></span><span style="display:flex;"><span><span style="color:#b57614">build</span><span style="color:#af3a03">:</span> build_rgba 
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#79740e">&#34;Image data extracted.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b57614">.PHONY</span><span style="color:#af3a03">:</span> clean
+</span></span><span style="display:flex;"><span><span style="color:#b57614">clean</span><span style="color:#af3a03">:</span>
+</span></span><span style="display:flex;"><span>	rm *.rgb *.rgba *.size
+</span></span></code></pre></div><p>In just under 60 lines of code, we&rsquo;ve built a pipeline that processes multiple image formats and can be expanded easily. It&rsquo;s definitely much less than all the code I would&rsquo;ve written to support image loading at runtime. Definitely by an order of magnitude.</p>
+<p>Depending on Make gives more benefits. This build updates automatically when a new file is added to the directory or whenever a file has been modified. We also get parallelism for free.</p>
+<p>With the <code>-j</code> argument, Make can run multiple jobs at once.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make build -j8 <span style="color:#928374;font-style:italic"># Use 8 cores for building targets</span>
+</span></span><span style="display:flex;"><span>make build -j <span style="color:#928374;font-style:italic"># Use all cores available</span>
+</span></span></code></pre></div><p>With this, it becomes clearer that applying the Unix philosophy isn&rsquo;t just about piping one program&rsquo;s output to another&rsquo;s input. It&rsquo;s about keeping our programs focused on completing simple objectives. My game isn&rsquo;t an image loader. It has to deal with data loaded from images. Through that simple change in perspective, it was possible to create a better solution that keeps my game code simpler to maintain and focused on what it actually needs to be: fun</p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/en/tags/programming/">programming</a></li>
+              
+              <li><a href="/en/tags/make/">make</a></li>
+              
+              <li><a href="/en/tags/imagemagick/">imagemagick</a></li>
+              
+              <li><a href="/en/tags/build-systems/">build systems</a></li>
+              
+              <li><a href="/en/tags/image-processing/">image processing</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/ebalbino" rel="me" title="GitHub"><svg class="feather">
+       <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#github" />
+    </svg></a><a class="border"></a></div>
+  <div class="footer-info">
+    2026  © Ed Balbino 
+  </div>
+</footer>
+
+
+
+</div>
+    </body>
+</html>

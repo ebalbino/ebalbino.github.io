@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advice on Defined Behavior</title>
+    <link>https://ebalbino.github.io/en/tags/advice/</link>
+    <description>Recent content in Advice on Defined Behavior</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>© Ed Balbino</copyright>
+    <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ebalbino.github.io/en/tags/advice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When picking up a new programming language</title>
+      <link>https://ebalbino.github.io/en/posts/on-learning-programming/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/posts/on-learning-programming/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Are you a different animal, but the same beast? BRYANT, KOBE&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;A programming language is a means for instructing a computer to perform operations. To distinguish itself from the others, each programming language decides on the fundamentals it will provide to facilitate describing and organizing these operations. There is no objective reason behind what will or will not be provided. Hypothetically, a language could be made that provides all of the methods created to describe operations. In practice though, it never happens. It begs the question. Why is that?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
