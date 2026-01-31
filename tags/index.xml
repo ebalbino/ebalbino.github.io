@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Defined Behavior</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://ebalbino.github.io/tags/</link>
     <description>Recent content in Tags on Defined Behavior</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Ed Balbino</copyright>
     <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ebalbino.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build Systems</title>
-      <link>http://localhost:1313/tags/build-systems/</link>
+      <link>https://ebalbino.github.io/tags/build-systems/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/build-systems/</guid>
+      <guid>https://ebalbino.github.io/tags/build-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Image Processing</title>
-      <link>http://localhost:1313/tags/image-processing/</link>
+      <link>https://ebalbino.github.io/tags/image-processing/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/image-processing/</guid>
+      <guid>https://ebalbino.github.io/tags/image-processing/</guid>
       <description></description>
     </item>
     <item>
       <title>Imagemagick</title>
-      <link>http://localhost:1313/tags/imagemagick/</link>
+      <link>https://ebalbino.github.io/tags/imagemagick/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/imagemagick/</guid>
+      <guid>https://ebalbino.github.io/tags/imagemagick/</guid>
       <description></description>
     </item>
     <item>
       <title>Make</title>
-      <link>http://localhost:1313/tags/make/</link>
+      <link>https://ebalbino.github.io/tags/make/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/make/</guid>
+      <guid>https://ebalbino.github.io/tags/make/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/tags/programming/</link>
+      <link>https://ebalbino.github.io/tags/programming/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/programming/</guid>
+      <guid>https://ebalbino.github.io/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Advice</title>
-      <link>http://localhost:1313/tags/advice/</link>
+      <link>https://ebalbino.github.io/tags/advice/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/advice/</guid>
+      <guid>https://ebalbino.github.io/tags/advice/</guid>
       <description></description>
     </item>
   </channel>
