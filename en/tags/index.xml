@@ -66,13 +66,6 @@
       <description></description>
     </item>
     <item>
-      <title>Reflections</title>
-      <link>https://ebalbino.github.io/en/tags/reflections/</link>
-      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/reflections/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Rust</title>
       <link>https://ebalbino.github.io/en/tags/rust/</link>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
@@ -80,16 +73,23 @@
       <description></description>
     </item>
     <item>
+      <title>Reflections</title>
+      <link>https://ebalbino.github.io/en/tags/reflections/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ebalbino.github.io/en/tags/reflections/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Shell</title>
       <link>https://ebalbino.github.io/en/tags/shell/</link>
-      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://ebalbino.github.io/en/tags/shell/</guid>
       <description></description>
     </item>
     <item>
       <title>Terminal</title>
       <link>https://ebalbino.github.io/en/tags/terminal/</link>
-      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://ebalbino.github.io/en/tags/terminal/</guid>
       <description></description>
     </item>
