@@ -86,6 +86,7 @@ BMP JPG PNG PSD TIFF Each format requires a method for parsing the contents of t
         <div class="title">
           <h1 class="title">Applying the Unix Philosophy</h1>
           <div class="meta">Posted on Jan 31, 2026</div>
+          <div class="meta">Estimated reading time: 7 minutes </div>
         </div>
         
         <section class="body">
@@ -238,12 +239,68 @@ BMP JPG PNG PSD TIFF Each format requires a method for parsing the contents of t
 </span></span><span style="display:flex;"><span><span style="color:#b57614">.PHONY</span><span style="color:#af3a03">:</span> clean
 </span></span><span style="display:flex;"><span><span style="color:#b57614">clean</span><span style="color:#af3a03">:</span>
 </span></span><span style="display:flex;"><span>	rm *.rgb *.rgba *.size
-</span></span></code></pre></div><p>In just under 60 lines of code, we&rsquo;ve built a pipeline that processes multiple image formats and can be expanded easily. It&rsquo;s definitely much less than all the code I would&rsquo;ve written to support image loading at runtime. Definitely by an order of magnitude.</p>
-<p>Depending on Make gives more benefits. This build updates automatically when a new file is added to the directory or whenever a file has been modified. We also get parallelism for free.</p>
-<p>With the <code>-j</code> argument, Make can run multiple jobs at once.</p>
-<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make build -j8 <span style="color:#928374;font-style:italic"># Use 8 cores for building targets</span>
-</span></span><span style="display:flex;"><span>make build -j <span style="color:#928374;font-style:italic"># Use all cores available</span>
-</span></span></code></pre></div><p>With this, it becomes clearer that applying the Unix philosophy isn&rsquo;t just about piping one program&rsquo;s output to another&rsquo;s input. It&rsquo;s about keeping our programs focused on completing simple objectives. My game isn&rsquo;t an image loader. It has to deal with data loaded from images. Through that simple change in perspective, it was possible to create a better solution that keeps my game code simpler to maintain and focused on what it actually needs to be: fun</p>
+</span></span></code></pre></div><p>In just under 60 lines, we&rsquo;ve built a pipeline that processes multiple image formats and can be extended easily. Compared to what I could&rsquo;ve possibly written in Rust, it&rsquo;s definitely more compact.</p>
+<p>Depending on Make gives more benefits for free. This pipeline updates automatically when a new file is added to the directory or whenever a file has been modified. One of the most underrated aspects of make is that a lot of power lives outside the Makefile.</p>
+<h3 id="make--j--parallel-execution"><code>make -j</code> — Parallel Execution</h3>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make build -j <span style="color:#928374;font-style:italic"># Use all cores available</span>
+</span></span><span style="display:flex;"><span>make build -j8 <span style="color:#928374;font-style:italic"># Use 8 cores for building targets</span>
+</span></span></code></pre></div><p>This enables parallel execution of independent targets based purely on dependency structure.</p>
+<p>What we get for free:</p>
+<ul>
+<li>Automatic multicore utilization</li>
+<li>Correct ordering via dependency graph</li>
+<li>No explicit concurrency logic in scripts</li>
+</ul>
+<h3 id="make--n----just-print----dry-run--dry-run"><code>make -n</code> / <code>--just-print</code> / <code>--dry-run</code> — Dry Run</h3>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make -n
+</span></span></code></pre></div><p>Prints the commands that would run, without executing them.</p>
+<p>What we get for free:</p>
+<ul>
+<li>Build preview</li>
+<li>Debugging dependency issues</li>
+<li>Documentation of the build process</li>
+</ul>
+<p>Your Makefile becomes self-describing without extra tooling.</p>
+<h3 id="make--k----keep-going--keep-going-on-errors"><code>make -k</code> / <code>--keep-going</code> — Keep Going on Errors</h3>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make -k
+</span></span></code></pre></div><p>Normally <code>make</code> stops at the first failure. With -k, it continues building unrelated targets.</p>
+<p>What we get for free:</p>
+<ul>
+<li>Partial results</li>
+<li>Faster feedback in large builds</li>
+<li>Fault isolation</li>
+</ul>
+<p>This is extremely useful in CI or large asset pipelines.</p>
+<h3 id="make--b--force-rebuild"><code>make -B</code> — Force Rebuild</h3>
+<p>Forces every target to rebuild, ignoring timestamps.</p>
+<p>What we get for free:</p>
+<ul>
+<li>Cache busting</li>
+<li>Sanity checks</li>
+<li>Easy “clean build” semantics without a clean target</li>
+</ul>
+<h3 id="make--t--touch-instead-of-build"><code>make -t</code> — Touch Instead of Build</h3>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make -t
+</span></span></code></pre></div><p>Marks targets as up-to-date without running commands.</p>
+<p>What we get for free:</p>
+<ul>
+<li>Fast recovery from interrupted builds</li>
+<li>Dependency graph validation</li>
+<li>Manual override of expensive steps</li>
+</ul>
+<p>This is a subtle but powerful escape hatch.</p>
+<h3 id="make--q--query-mode"><code>make -q</code> — Query Mode</h3>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make -q
+</span></span></code></pre></div><p>Exits with a status code indicating whether anything would be rebuilt.</p>
+<p>What we get for free:</p>
+<ul>
+<li>CI checks</li>
+<li>Git hooks</li>
+<li>Editor integrations</li>
+</ul>
+<hr>
+<p>With this, it becomes clearer that applying the Unix philosophy isn&rsquo;t just about piping one program&rsquo;s output to another&rsquo;s input. It&rsquo;s about keeping our programs focused on completing simple objectives.</p>
+<p>My game isn&rsquo;t an image loader. It just has to deal with data loaded from images. Through that simple change in perspective, it was possible to create a better solution that keeps my game code simpler to maintain and focused on what it actually needs to be: <strong>fun!</strong></p>
 
         </section>
         <div class="post-tags">
