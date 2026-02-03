@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Defined Behavior</title>
-    <link>https://ebalbino.github.io/pt/tags/</link>
+    <link>https://blog.zigurate.dev/pt/tags/</link>
     <description>Recent content in Tags on Defined Behavior</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
     <copyright>© Ed Balbino</copyright>
-    <atom:link href="https://ebalbino.github.io/pt/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.zigurate.dev/pt/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

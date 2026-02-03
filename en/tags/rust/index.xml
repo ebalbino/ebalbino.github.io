@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rust on Defined Behavior</title>
-    <link>https://ebalbino.github.io/en/tags/rust/</link>
+    <link>https://blog.zigurate.dev/en/tags/rust/</link>
     <description>Recent content in Rust on Defined Behavior</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>© Ed Balbino</copyright>
     <lastBuildDate>Fri, 23 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ebalbino.github.io/en/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.zigurate.dev/en/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manual memory management patterns</title>
-      <link>https://ebalbino.github.io/en/posts/manual-memory-management-patterns/</link>
+      <link>https://blog.zigurate.dev/en/posts/manual-memory-management-patterns/</link>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/posts/manual-memory-management-patterns/</guid>
+      <guid>https://blog.zigurate.dev/en/posts/manual-memory-management-patterns/</guid>
       <description>&lt;p&gt;Manual memory management has a nasty reputation.&lt;/p&gt;&#xA;&lt;p&gt;I get it.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;re a developer. You&amp;rsquo;re looking to put another trick in your bag. You look up the most popular languages of the year. You glaze over the results and something stands out.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;So many languages have been made just to avoid manual memory management.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;It sends a clear message. &lt;em&gt;Here there be dragons&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I like to separate manual memory management into two groups:&lt;/p&gt;</description>
     </item>
   </channel>

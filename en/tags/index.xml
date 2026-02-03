@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Defined Behavior</title>
-    <link>https://ebalbino.github.io/en/tags/</link>
+    <link>https://blog.zigurate.dev/en/tags/</link>
     <description>Recent content in Tags on Defined Behavior</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>© Ed Balbino</copyright>
     <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ebalbino.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.zigurate.dev/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build Systems</title>
-      <link>https://ebalbino.github.io/en/tags/build-systems/</link>
+      <link>https://blog.zigurate.dev/en/tags/build-systems/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/build-systems/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/build-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Image Processing</title>
-      <link>https://ebalbino.github.io/en/tags/image-processing/</link>
+      <link>https://blog.zigurate.dev/en/tags/image-processing/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/image-processing/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/image-processing/</guid>
       <description></description>
     </item>
     <item>
       <title>Imagemagick</title>
-      <link>https://ebalbino.github.io/en/tags/imagemagick/</link>
+      <link>https://blog.zigurate.dev/en/tags/imagemagick/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/imagemagick/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/imagemagick/</guid>
       <description></description>
     </item>
     <item>
       <title>Make</title>
-      <link>https://ebalbino.github.io/en/tags/make/</link>
+      <link>https://blog.zigurate.dev/en/tags/make/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/make/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/make/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>https://ebalbino.github.io/en/tags/programming/</link>
+      <link>https://blog.zigurate.dev/en/tags/programming/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/programming/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Arena</title>
-      <link>https://ebalbino.github.io/en/tags/arena/</link>
+      <link>https://blog.zigurate.dev/en/tags/arena/</link>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/arena/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/arena/</guid>
       <description></description>
     </item>
     <item>
       <title>Memory-Management</title>
-      <link>https://ebalbino.github.io/en/tags/memory-management/</link>
+      <link>https://blog.zigurate.dev/en/tags/memory-management/</link>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/memory-management/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/memory-management/</guid>
       <description></description>
     </item>
     <item>
       <title>Pointers</title>
-      <link>https://ebalbino.github.io/en/tags/pointers/</link>
+      <link>https://blog.zigurate.dev/en/tags/pointers/</link>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/pointers/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/pointers/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://ebalbino.github.io/en/tags/rust/</link>
+      <link>https://blog.zigurate.dev/en/tags/rust/</link>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/rust/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>Reflections</title>
-      <link>https://ebalbino.github.io/en/tags/reflections/</link>
+      <link>https://blog.zigurate.dev/en/tags/reflections/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/reflections/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/reflections/</guid>
       <description></description>
     </item>
     <item>
       <title>Shell</title>
-      <link>https://ebalbino.github.io/en/tags/shell/</link>
+      <link>https://blog.zigurate.dev/en/tags/shell/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/shell/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/shell/</guid>
       <description></description>
     </item>
     <item>
       <title>Terminal</title>
-      <link>https://ebalbino.github.io/en/tags/terminal/</link>
+      <link>https://blog.zigurate.dev/en/tags/terminal/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/terminal/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/terminal/</guid>
       <description></description>
     </item>
     <item>
       <title>Advice</title>
-      <link>https://ebalbino.github.io/en/tags/advice/</link>
+      <link>https://blog.zigurate.dev/en/tags/advice/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ebalbino.github.io/en/tags/advice/</guid>
+      <guid>https://blog.zigurate.dev/en/tags/advice/</guid>
       <description></description>
     </item>
   </channel>
